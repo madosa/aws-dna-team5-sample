@@ -2,21 +2,21 @@
 
 AWS SAM Python 프로젝트의 대략적인 구성을 소개합니다
 
-## 📦 Prerequisites
+## 📦  Prerequisites
 
 아래 응용프로그램은 미리 설치가 필요합니다
 
-### 🐳 Docker
+### 🐳  Docker
 
 `sam build --use-container` 명령이 도커를 필요로 합니다
 
-### 🔐 AWS Credential 설정
+### 🔐  AWS Credential 설정
 
 `aws configure` 로 원하는 AWS DNA 실습용 IAM Security credentials 를 세팅해야 합니다
 
 미리 `brew instal awscli` 를 설치해두면 좋습니다
 
-## 📂 Project Structure
+## 📂  Project Structure
 
 AWS SAM 의 Python 프로젝트는 다음의 구조가 좋을듯 합니다
 
@@ -42,7 +42,7 @@ AWS SAM 의 Python 프로젝트는 다음의 구조가 좋을듯 합니다
 └──  template.yaml  # AWS SAM 정의 파일
 ```
 
-## 🍰 How to start
+## 🍰  How to start
 
 파이썬 가상환경을 구성하고, 이 프로젝트에서 사용할 의존성 파일을 설치하면 끝납니다
 
@@ -106,7 +106,7 @@ $ poetry install --no-root
 
 다음은 로컬에서 함수를 테스트해보는 방법과 빌드하는법, 배포하는 방법에 대해 설명합니다
 
-### 🚕 Run "SlackEchoFunction" with "sam local invoke"
+### 🚕  Run "SlackEchoFunction" with "sam local invoke"
 
 미리 작성한 Makefile의 명령어를 활용하여 실행할 수 있습니다
 
@@ -117,7 +117,7 @@ $ make build
 $ make invoke-local-echo
 ```
 
-### 🚀 Deploy SAM
+### 🚀  Deploy SAM
 
 다음의 명령어로 배포할 수 있습니다
 
