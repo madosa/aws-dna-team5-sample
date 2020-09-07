@@ -13,6 +13,7 @@ AWS SAM Python 프로젝트의 대략적인 구성을 소개합니다
 ### 🔐 AWS Credential 설정
 
 `aws configure` 로 원하는 AWS DNA 실습용 IAM Security credentials 를 세팅해야 합니다
+
 미리 `brew instal awscli` 를 설치해두면 좋습니다
 
 ## 📂 Project Structure
@@ -48,6 +49,7 @@ AWS SAM 의 Python 프로젝트는 다음의 구조가 좋을듯 합니다
 ### Install pyenv
 
 파이썬 가상환경을 설정하기 위한 응용프로그램입니다
+
 Java의 jenv, NodeJS의 nvm과 비슷합니다
 
 ```bash
@@ -78,8 +80,11 @@ $ pyenv virtualenv 3.8.3 takagi
 ### Install Poetry
 
 `Poetry` 는 파이썬 패키지 매니저입니다.
+
 NodeJS에 기본 패키지 매니저인 `npm` 외에도 `yarn`이 있듯
+
 Python에도 기본 패키지 매니저인 `pip` 외에도 `Poetry`가 있습니다
+
 (편의를 위해 사용합니다)
 
 ```bash
@@ -104,6 +109,7 @@ $ poetry install --no-root
 ### 🚕 Run "SlackEchoFunction" with "sam local invoke"
 
 미리 작성한 Makefile의 명령어를 활용하여 실행할 수 있습니다
+
 소스를 수정하면 새로이 빌드하고, 실행해야 변경된 내용이 반영됩니다
 
 ```shell
